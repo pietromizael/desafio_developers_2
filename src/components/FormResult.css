@@ -1,0 +1,28 @@
+.form-results {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-results h2 {
+    text-align: center;
+  }
+  
+  .form-results button {
+    color: #f1f1f1;
+    margin: 1rem auto;
+    min-width: 40px;
+    padding: .8rem 1.3rem;
+    background-color: #726d6d;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: .4s;
+  }
+  
+  .form-results button:hover {
+    opacity: 1;
+    padding: 1rem 1.5rem;
+  }
+  
