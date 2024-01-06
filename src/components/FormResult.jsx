@@ -4,7 +4,7 @@ import { ContextGithub } from "../context/ContextGithub";
 import "./FormResult.css";
 
 const FormResult = () => {
-    const {user} = useContext(ContextGithub)
+    const {user, clearUserData} = useContext(ContextGithub)
 
     const [userName, setUserName] = useState(null)
     const [userLocation, setUserLocation] = useState(null)
@@ -31,7 +31,8 @@ const FormResult = () => {
             setUserBio(null),
             setUserFollowers(null),
             setUserFollowing(null),
-            setUserRepositories(null)
+            setUserRepositories(null),
+            clearUserData()
         )
 
     }
@@ -40,6 +41,7 @@ const FormResult = () => {
     <div className="form-results">
       <h2>Resultados:</h2>
       <p>Nome do usuário: {userName}</p>
+      <p>Localização: {userLocation}</p>
       <p>Repositórios do usuário: {userRepositories}</p>
       <p>Bio do usuário: {userBio}</p>
       <p>Seguindo: {userFollowing}</p>

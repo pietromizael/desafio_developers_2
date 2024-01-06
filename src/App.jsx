@@ -1,5 +1,6 @@
 import FormSearch from "./components/FormSearch";
 import FormResult from "./components/FormResult";
+import RepositoriesContainer from "./components/RepositoriesContainer";
 
 import { ContextGithubProvider } from "./context/ContextGithub";
 
@@ -15,6 +16,7 @@ function App() {
             <ContextGithubProvider>
               <FormSearch />
               <FormResult />
+              <RepositoriesContainer />
             </ContextGithubProvider>
           </div>
         </div>
